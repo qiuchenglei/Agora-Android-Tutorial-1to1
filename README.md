@@ -26,7 +26,8 @@ Agora 视频 SDK 支持 iOS / Android / Windows / macOS 等多个平台，你可
 <string name="agora_app_id"><#YOUR APP ID#></string>
 ```
 
-然后在 [Agora.io SDK](https://www.agora.io/cn/download/) 下载 **视频通话 + 直播 SDK**，解压后将其中的 **libs** 文件夹下的 ***.jar** 复制到本项目的 **app/libs** 下，其中的 **libs** 文件夹下的 **arm64-v8a**/**x86**/**armeabi-v7a** 复制到本项目的 **app/src/main/libs** 下。
+然后在项目对应的module的build.gradle 的dependencies中加入该SDK在Jcenter动态集成的链接地址：
+compile 'io.agora.rtc:full-sdk:2.0.0' （该示例程序已添加此链接地址 ，无需再添加，如要集成此SDK，添加动态链接地址是最重要的一步。）
 
 最后用 Android Studio 打开该项目，连上设备，编译并运行。
 
