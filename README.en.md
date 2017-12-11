@@ -30,7 +30,7 @@ Agora Video SDK supports iOS / Android / Windows / macOS etc. You can find demos
 
 - The recommended way to integrate:
 
-Add the address which can integrate the Agora Video SDK automatically through JCenter in the property of the dependence of the "app / build.gradle":
+Add the address which can integrate the Agora Video SDK automatically through JCenter in the property of the dependence of the "app/build.gradle":
 ```
 compile 'io.agora.rtc:full-sdk:2.0.0'
 ```
@@ -40,7 +40,7 @@ compile 'io.agora.rtc:full-sdk:2.0.0'
 
 First, download the **Agora Video SDK** from [Agora.io SDK](https://www.agora.io/en/download/). Unzip the downloaded SDK package and copy ***.jar** under **libs** to **app/libs**, **arm64-v8a**/**x86**/**armeabi-v7a** under **libs** to **app/src/main/libs**.
 
-Then, add the following code in the property of the android of the "app / build.gradle":
+Then, add the following code in the property of the android of the "app/build.gradle":
 
 ```
  sourceSets {
@@ -49,7 +49,7 @@ Then, add the following code in the property of the android of the "app / build.
         }
     }
 ```
-At last, add the fllowing code in the property of the dependence of the "app / build.gradle":
+At last, add the fllowing code in the property of the dependence of the "app/build.gradle":
 
 ```
 compile fileTree(dir: 'libs', include: ['*.jar'])
